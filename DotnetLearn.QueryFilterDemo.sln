@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F33BA4EF-5686-4DA3-9699-1DD5BD92EBB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetLearn.QueryFilterDemo", "src\DotnetLearn.QueryFilterDemo\DotnetLearn.QueryFilterDemo.csproj", "{D7523590-E414-4574-88F2-B528AC9D338C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{23C263E2-919D-4870-82B8-E304C48BDBE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetLearn.QueryFilterDemo.Tests", "tests\DotnetLearn.QueryFilterDemo.Tests\DotnetLearn.QueryFilterDemo.Tests.csproj", "{D5141674-301F-4C8E-AEAF-F395C862D290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7523590-E414-4574-88F2-B528AC9D338C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7523590-E414-4574-88F2-B528AC9D338C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7523590-E414-4574-88F2-B528AC9D338C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7523590-E414-4574-88F2-B528AC9D338C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5141674-301F-4C8E-AEAF-F395C862D290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5141674-301F-4C8E-AEAF-F395C862D290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5141674-301F-4C8E-AEAF-F395C862D290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5141674-301F-4C8E-AEAF-F395C862D290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7523590-E414-4574-88F2-B528AC9D338C} = {F33BA4EF-5686-4DA3-9699-1DD5BD92EBB9}
+		{D5141674-301F-4C8E-AEAF-F395C862D290} = {23C263E2-919D-4870-82B8-E304C48BDBE5}
+	EndGlobalSection
+EndGlobal
