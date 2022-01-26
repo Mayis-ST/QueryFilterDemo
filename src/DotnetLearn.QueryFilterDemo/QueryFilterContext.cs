@@ -55,6 +55,10 @@ public class QueryFilterContext : DbContext
 
         // modelBuilder.AddSoftDeleteQueryFilters();
 
+        // tenant.HasQueryFilter(tenant => tenant.Id == tenantId);
+        // customer.HasQueryFilter(customer => customer.TenantId == tenantId);
+        // order.HasQueryFilter(order => order.TenantId == tenantId);
+
         // tenant.AddQueryFilter(tenant => tenant.Id == tenantId);
         // customer.AddQueryFilter(customer => customer.TenantId == tenantId);
         // order.AddQueryFilter(order => order.TenantId == tenantId);
