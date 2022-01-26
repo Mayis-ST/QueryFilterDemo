@@ -1,6 +1,9 @@
 namespace DotnetLearn.QueryFilterDemo.Entities;
 
+using EntityMetadata;
+
 public sealed class Tenant
+    // : ISoftDeleteableEntity
 {
     public Tenant(string name)
     {

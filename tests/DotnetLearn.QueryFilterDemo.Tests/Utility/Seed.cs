@@ -1,8 +1,5 @@
-using System.Threading.Tasks;
-
 namespace DotnetLearn.QueryFilterDemo.Tests.Utility;
 
-using System;
 using Entities;
 
 internal static class Seed
