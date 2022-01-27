@@ -3,6 +3,7 @@ using System;
 using DotnetLearn.QueryFilterDemo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotnetLearn.QueryFilterDemo.Migrations
 {
     [DbContext(typeof(QueryFilterContext))]
-    partial class QueryFilterContextModelSnapshot : ModelSnapshot
+    [Migration("20220126154221_AddSoftDelete")]
+    partial class AddSoftDelete
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.1");
@@ -41,7 +43,7 @@ namespace DotnetLearn.QueryFilterDemo.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.ToTable("Customers", (string)null);
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("DotnetLearn.QueryFilterDemo.Entities.Order", b =>
@@ -70,7 +72,7 @@ namespace DotnetLearn.QueryFilterDemo.Migrations
 
                     b.HasIndex("CustomerId", "TenantId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("DotnetLearn.QueryFilterDemo.Entities.Tenant", b =>
@@ -88,7 +90,7 @@ namespace DotnetLearn.QueryFilterDemo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tenants", (string)null);
+                    b.ToTable("Tenants");
                 });
 
             modelBuilder.Entity("DotnetLearn.QueryFilterDemo.Entities.Customer", b =>

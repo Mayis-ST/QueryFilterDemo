@@ -1,6 +1,10 @@
 namespace DotnetLearn.QueryFilterDemo.Entities;
 
+using EntityMetadata;
+
 public sealed class Order
+    // : ISoftDeleteableEntity
+    // , ITenantSpecific
 {
     public Order(decimal amount)
     {

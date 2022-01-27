@@ -1,6 +1,10 @@
 namespace DotnetLearn.QueryFilterDemo.Entities;
 
+using EntityMetadata;
+
 public sealed class Customer
+    // : ISoftDeleteableEntity
+    // , ITenantSpecific
 {
     public Customer(string firstName, string lastName)
     {
